@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tienda online</title>
+    <link rel="stylesheet" href="/CSS/Estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="main-header__container">
+                <h1 class="main-header__title">BLINKA</h1>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="/Html/Index.html" class="menu__link">HOME</a></li>
+                        <li class="menu__item"><a href="/Html/articulo.html" class="menu__link">ABOUT</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
+                        <li class="menu__item"><a href="/Html/formulario.html" class="menu__link">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-header__container telefono">
+                <span class="main-header__txt">Need Help &nbsp;</span>
+                <p class="main-header__txt"><i class="fas fa-phone"></i> &nbsp; Call 26573453252</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="tituform">Envianos tus dudas o sugerencias para seguir mejorando en la plataforma.</h1>
+        <form action="#">
+            <h2>Contactanos</h2>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+            <input type="email" id="correo" name="correo" placeholder="Correo electronico" required>
+            <input type="number" id="telefono" name="telefono" placeholder="Telefono" required>
+            <textarea name="comentario" id="comentario" placeholder="Escriba aqui su mensaje" required></textarea>
+            <input type="button" value="ENVIAR" id="boton" onclick="return confirmarEnvio()">
+        </form>
+        <div class="alerta" id="alertaID">
+                
+        </div>
+    </main>
+
+
+    <script src="/JS/Codigo.js"></script>
+
+    <footer>
+        <div class="footer_pie-de-pagina">
+            <img  src="/Imagenes/logo-blinka.jpg" alt="logo de pie de pagina" class="logo">
+            <p>Siguenos en nuestras redes sociales</p>
+            <div class="contenedor-iconos">
+            <a href="https://www.facebook.com/" class="icono-social" target="_blank">
+                <img src="/Imagenes/FacebookBlanco.png" alt="icono facebook">
+            </a>
+            <a href="https://www.instagram.com/" class="icono-social" target="_blank">
+                <img src="/Imagenes/InstagramBlanco.png" alt="icono instagram">
+            </a>
+            <a href="https://twitter.com/?lang=es" class="icono-social" target="_blank">
+                <img src="/Imagenes/TwitterBlanco.png" alt="icono twitter" >
+            </a>
+            <a href="https://ar.linkedin.com/" class="icono-social" target="_blank">
+                <img src="/Imagenes/LinkedinBlanco.png" alt="icono Linkedin">
+            </a>
+            </div>
+            <span class="copyright">
+            &copy;Copyright © 1999-2022 Blinka A.R.S.L.V.M
+            </span>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
